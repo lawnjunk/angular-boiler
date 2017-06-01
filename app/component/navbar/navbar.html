@@ -1,0 +1,11 @@
+<header class='navbar'>
+  <h1> Slugban </h1>
+  <p> {{navbarCtrl.title}} </p>
+  <nav>
+    <ul>
+      <li ng-repeat='item in navbarCtrl.routes track by $index'>
+        <a ng-href='{{item.url}}'> {{item.name}} </a>
+      </li>
+    </ul>
+  </nav>
+</header>
